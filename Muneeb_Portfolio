@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Muhammad Muneeb Ali — Portfolio</title>
+  <meta name="description" content="Mechanical Engineer — Tribology, Maintenance, Additive Manufacturing" />
+  <style>
+    :root{
+      --bg:#0f172a;         /* slate-900 */
+      --card:#111827;       /* gray-900 */
+      --muted:#94a3b8;      /* slate-400 */
+      --text:#e5e7eb;       /* gray-200 */
+      --brand:#22d3ee;      /* cyan-400 */
+      --brand-2:#06b6d4;    /* cyan-500 */
+      --accent:#f59e0b;     /* amber-500 */
+      --ring: rgba(34, 211, 238, 0.35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica Neue,Arial,"Apple Color Emoji","Segoe UI Emoji";}
+    a{color:var(--brand)}
+    .container{max-width:1100px;margin:auto;padding:24px}
+    header{position:sticky;top:0;background:linear-gradient(180deg, rgba(15,23,42,.95), rgba(15,23,42,.75));backdrop-filter: blur(10px);z-index:50;border-bottom:1px solid #1f2937}
+    .nav{display:flex;align-items:center;gap:18px;justify-content:space-between;padding:10px 24px}
+    .nav a{color:var(--text);text-decoration:none;opacity:.85}
+    .nav a:hover{opacity:1}
+    .brand{display:flex;align-items:center;gap:10px}
+    .brand .dot{width:10px;height:10px;border-radius:999px;background:radial-gradient(circle at 30% 30%, var(--brand), var(--brand-2))}
+    .tag{display:inline-flex;align-items:center;gap:8px;border:1px solid #1f2937;padding:6px 10px;border-radius:999px;background:linear-gradient(180deg,#0b1222,#0e162a);color:var(--muted);font-size:14px}
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center;padding:56px 24px}
+    .hero .card{background:linear-gradient(180deg,#0e162a,#0b1221);border:1px solid #1f2937;border-radius:16px;padding:24px}
+    h1{font-size:40px;line-height:1.1;margin:0 0 12px}
+    .lead{font-size:18px;color:var(--muted)}
+    .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+    .btn{display:inline-flex;align-items:center;gap:10px;border:1px solid #1f2937;padding:10px 14px;border-radius:12px;text-decoration:none}
+    .btn.primary{background:linear-gradient(180deg, var(--brand), var(--brand-2));color:#041018;font-weight:700;border-color:transparent}
+    .btn:hover{box-shadow:0 0 0 3px var(--ring)}
+    section{padding:28px 24px}
+    .section-title{display:flex;align-items:center;gap:10px;margin:0 0 16px}
+    .section-title h2{margin:0;font-size:22px}
+    .grid{display:grid;gap:16px}
+    .two{grid-template-columns:repeat(2,1fr)}
+    .three{grid-template-columns:repeat(3,1fr)}
+    .card{background:linear-gradient(180deg,#0e162a,#0b1221);border:1px solid #1f2937;border-radius:16px;padding:18px}
+    .muted{color:var(--muted)}
+    .item h3{margin:0 0 6px;font-size:18px}
+    .item .meta{font-size:13px;color:var(--muted)}
+    ul.clean{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+    .chip{display:inline-flex;padding:6px 10px;border:1px solid #1f2937;border-radius:999px;background:#0c1426;color:#cbd5e1;font-size:13px}
+    .timeline{position:relative;padding-left:22px}
+    .timeline::before{content:"";position:absolute;left:10px;top:4px;bottom:4px;width:2px;background:#1f2937}
+    .t-item{position:relative;margin-bottom:16px}
+    .t-item::before{content:"";position:absolute;left:-2px;top:6px;width:12px;height:12px;border-radius:999px;background:var(--brand);box-shadow:0 0 0 4px rgba(34,211,238,.15)}
+    footer{padding:40px 24px;color:var(--muted);text-align:center;border-top:1px solid #1f2937}
+    .contact-grid{display:grid;gap:12px}
+    .contact-card{display:flex;align-items:flex-start;gap:12px}
+    .small{font-size:14px}
+    .nowrap{white-space:nowrap}
+    @media(max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .two,.three{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav container">
+      <div class="brand"><span class="dot"></span><strong>Muneeb</strong><span class="muted">| Mechanical Engineer</span></div>
+      <div class="links small">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#research">Research</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero" id="about">
+      <div>
+        <span class="tag">Open to Trainee / Graduate Roles</span>
+        <h1>Muhammad Muneeb Ali</h1>
+        <p class="lead">Mechanical Engineering graduate focused on <strong>tribology</strong>, <strong>maintenance</strong>, and <strong>additive manufacturing</strong>. Hands-on with heavy machinery, testing rigs, and reliability-driven maintenance. Registered PEC Engineer (MECH/057693).</p>
+        <div class="btns">
+          <a class="btn primary" href="CV-Muhammad_MuneebAli.pdf" download>Download CV</a>
+          <a class="btn" href="https://www.linkedin.com/in/muhammad-muneeb-ali" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="#contact">Email/Phone</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0">Objective</h3>
+        <p class="small muted">Seeking a Masters by Research position in Mechanical Engineering to deepen hands‑on research, sharpen core knowledge, and solve real‑world problems. Focus areas: material testing and 3D printing through guided research and teamwork.</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px">
+          <span class="chip">Tribology</span>
+          <span class="chip">Wear Testing</span>
+          <span class="chip">Material Behaviour</span>
+          <span class="chip">Additive Manufacturing</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <div class="section-title"><h2>Experience</h2></div>
+      <div class="grid two">
+        <div class="card">
+          <div class="item">
+            <h3>Assistant Mechanical Engineer <span class="muted">· Fattir Engineers (Jan 2025 – Jul 2025)</span></h3>
+            <ul class="clean small">
+              <li>Operated and maintained a fleet of heavy machinery and related mechanical equipment.</li>
+              <li>Ensured compliance with safety and operational standards; kept up‑to‑date logs and inspection records.</li>
+              <li>Supported troubleshooting and planned maintenance to improve uptime and reliability.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="item">
+            <h3>Mechanical Maintenance Intern <span class="muted">· Fauji Fertilizer Company (Jul 2023 – Sep 2023)</span></h3>
+            <ul class="clean small">
+              <li>Contributed to the rehabilitation of an Ammonia Storage Tank through inspections and condition assessment.</li>
+              <li>Learned maintenance procedures and documentation in a large industrial facility.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects / FYP -->
+    <section id="projects">
+      <div class="section-title"><h2>Projects</h2></div>
+      <div class="grid two">
+        <div class="card">
+          <div class="item">
+            <h3>Rotatory Frictional Wear Test Rig (FYP) <span class="muted">· Tribology</span></h3>
+            <ul class="clean small">
+              <li>Designed and fabricated a rotary wear test rig for precise friction and wear measurements.</li>
+              <li>Tested aluminum, stainless steel, and steel under varying loads (10–100 N), 100 RPM, with/without lubrication.</li>
+              <li>Outcome: better material selection, extended component life, and reduced maintenance costs for industry.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="item">
+            <h3>Research Assistant (Freelance, Remote) <span class="muted">Feb 2025 – Present</span></h3>
+            <ul class="clean small">
+              <li>Reviewed literature on Al alloys (e.g., AlSi10Mg, Scalmalloy) and powder characteristics for LPBF.</li>
+              <li>Mapped processing parameters (laser power, scan speed, layer thickness) to microstructure/performance.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <div class="section-title"><h2>Education</h2></div>
+      <div class="grid two">
+        <div class="card">
+          <div class="item">
+            <h3>BSc Mechanical Engineering <span class="muted">· NFC IET Multan (Sep 2020 – Oct 2024)</span></h3>
+            <p class="small">CGPA: 3.27/4</p>
+            <p class="small muted">Key Courses: Mechanics of Machines, Mechanics of Materials, Thermodynamics, Fluid Dynamics, CAD, Professional Ethics.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="item">
+            <h3>Intermediate (Pre‑Engineering) <span class="muted">· Superior College Bhakkar (Aug 2018 – Sep 2020)</span></h3>
+            <p class="small">Percentage: 84%</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research -->
+    <section id="research">
+      <div class="section-title"><h2>Research & Publications</h2></div>
+      <div class="grid two">
+        <div class="card">
+          <div class="item">
+            <h3>Interests</h3>
+            <div style="display:flex;gap:8px;flex-wrap:wrap">
+              <span class="chip">Tribology</span>
+              <span class="chip">Wear Testing</span>
+              <span class="chip">Material Behaviour</span>
+              <span class="chip">Additive Manufacturing</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="item">
+            <h3>Publication</h3>
+            <p class="small">Tailoring Aluminum Alloys for 3D Printing: Process Parameters & Heat Treatments for Enhanced Performance — <em>Ongoing</em></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <div class="section-title"><h2>Skills</h2></div>
+      <div class="grid three">
+        <div class="card">
+          <h3>Software</h3>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <span class="chip">SolidWorks</span>
+            <span class="chip">MS Office</span>
+            <span class="chip">Minitab</span>
+            <span class="chip">Origin</span>
+            <span class="chip">Python</span>
+            <span class="chip">Six Sigma (Green Belt)</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Strengths</h3>
+          <ul class="clean small">
+            <li>Preventive & predictive maintenance</li>
+            <li>Testing rigs & instrumentation</li>
+            <li>Documentation & QC checks</li>
+            <li>Teamwork & safety culture</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Languages</h3>
+          <ul class="clean small">
+            <li>English — Fluent</li>
+            <li>Urdu — Native</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Volunteer & Awards -->
+    <section id="extras">
+      <div class="section-title"><h2>Volunteer & Achievements</h2></div>
+      <div class="grid two">
+        <div class="card">
+          <div class="timeline">
+            <div class="t-item">
+              <div class="item">
+                <h3>Community Support Drives</h3>
+                <p class="small muted">Led/assisted ration and medical camps for 100+ families (2022–2025); fund‑raising for patients and families in need.</p>
+              </div>
+            </div>
+            <div class="t-item">
+              <div class="item">
+                <h3>Christmas Outreach</h3>
+                <p class="small muted">Celebrated with Christian families to promote peace and unity (Dec 2022).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Award</h3>
+          <p class="small">Fully funded Intermediate studies (Sep 2018 – Aug 2020).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- References -->
+    <section id="references">
+      <div class="section-title"><h2>References</h2></div>
+      <div class="grid two">
+        <div class="card small">
+          <strong>Engr. Dr. Syed Nasir Mehdi Gardezi</strong><br/>
+          Head, Mechanical Engineering — NFC IET Multan
+        </div>
+        <div class="card small">
+          <strong>Engr. Muhammad Hassan</strong><br/>
+          Industrial Liaison Officer — NFC IET Multan
+        </div>
+      </div>
+      <p class="small muted" style="margin-top:8px">(Full contact details available on request.)</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="section-title"><h2>Contact</h2></div>
+      <div class="grid two contact-grid">
+        <div class="card contact-card">
+          <div>
+            <div><strong>Email</strong></div>
+            <div class="small"><a href="mailto:muneebali7212@outlook.com">muneebali7212@outlook.com</a></div>
+          </div>
+        </div>
+        <div class="card contact-card">
+          <div>
+            <div><strong>Phone</strong></div>
+            <div class="small nowrap"><a href="tel:+923170367212">+92 317 0367212</a></div>
+          </div>
+        </div>
+        <div class="card contact-card">
+          <div>
+            <div><strong>LinkedIn</strong></div>
+            <div class="small"><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/muhammad-muneeb-ali">linkedin.com/in/muhammad-muneeb-ali</a></div>
+          </div>
+        </div>
+        <div class="card contact-card">
+          <div>
+            <div><strong>PEC Registration</strong></div>
+            <div class="small">MECH/057693</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="y"></span> Muhammad Muneeb Ali · Built with vanilla HTML/CSS. 
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
